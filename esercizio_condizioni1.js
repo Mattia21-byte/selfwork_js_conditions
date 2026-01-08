@@ -27,78 +27,98 @@ if(voto < 18 && voto >= 0){
 
 
 // esercizio con lo switch
-let voto2 = 18;
-switch(voto2){
-    case 1:
-    case 2:
-    case 3:    
-    case 4:
-    case 5:
-    case 6:
-    case 7:
-    case 8:
-    case 9:
-    case 10:
-    case 11:
-    case 12:
-    case 13:
-    case 14:
-    case 15:
-    case 16:
-    case 17:
+let voto2 = 29;
+let giudizio;
+
+if(voto2 < 18){
     
-    console.log(`Insufficiente!`);
+    
+giudizio = `insufficiente`;
+    
+
+}else if(voto2 < 21 ){
+    
+    
+    
+giudizio = `sufficiente`;
+    
+    
+    
+}else if(voto2 < 24){
+    
+    
+giudizio = `buono`;
+    
+    
+    
+}else if(voto2 < 27){
+    
+    
+giudizio = `distinto`;
+    
+    
+}else if(voto2 <= 29){
+    
+    
+    giudizio = `ottimo`;
+    
+
+}else if(voto2 === 30){
+    
+    
+    
+giudizio = `eccellente`;
+    
+
+}else{
+    
+    
+giudizio = `voto non valido`;
+    
+    
+}
+
+
+switch(giudizio){
+    
+    case `insufficiente`:
+    console.log(`Insufficiente`);
     break;
     
-    case 18:
-    case 19:
-    case 20:        
-    
-    
-    console.log(`Sufficiente`);
+    case `sufficiente`:
+    console.log(`sufficiente`);
     break;
     
-    case 21:
-    case 22:
-    case 23:
-    
-    console.log(`Buono`);
+    case `buono`:
+    console.log(`buono`);
     break;
     
-    case 24:
-    case 25:
-    case 26:
-    
-    console.log(`Distinto!`);
+    case `distinto`:
+    console.log(`distinto`);
     break;
     
-    case 27:
-    case 28:
-    case 29:
-    
-    console.log(`Ottimo!`);
+    case `ottimo`:
+    console.log(`ottimo`);
     break;
     
-    
-    case 30:
-    console.log(`Eccellente!`);
+    case `eccellente`:
+    console.log(`eccellente`);
     break;
     
     
     default:
-    console.log(`Voto non valido!`);
-    break;
-    
-    
-    
-    
-    
-    
-    
+    console.log(`voto non valido`);
     
     
     
 }
+
+
+
+
+
+
+
 
 
 // esercizio bonus con if/else + voto3 casuale da 0 a 30

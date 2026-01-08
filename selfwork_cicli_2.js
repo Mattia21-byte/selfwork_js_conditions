@@ -1,6 +1,6 @@
 let somma = 0;
 let contatore = 0;
-// numero pari= numero % ==== 0
+// numero pari= numero % === 0
 // numero dispari= numero % !== 0
 for(let i = 1; i <= 20; i++){
 
